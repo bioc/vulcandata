@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Package: vulcandata\nType: Package\nTitle: VirtUaL ChIP-Seq data Analysis using Networks, dummy dataset\nVersion: 0.99.0\nAuthor: Who wrote it\nMaintainer: The package maintainer <yourself@somewhere.net>\nDescription: This package provides a dummy regulatory network and ChIP-Seq\n    dataset for running examples in the vulcan package\nLicense: What license is it under?\nDepends: vulcan\nEncoding: UTF-8\nLazyData: true\nRoxygenNote: 6.0.1\n",
+    "created" : 1495807758118.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2011098339",
+    "id" : "50E0013E",
+    "lastKnownWriteTime" : 1495807830,
+    "last_content_update" : 1495807830096,
+    "path" : "~/Dropbox/rstudio/vulcanpackage/vulcandata/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}
