@@ -7,8 +7,6 @@ Maintainer: Federico M. Giorgi <federico.giorgi@gmail.com>
 Description: This package provides a dummy regulatory network and ChIP-Seq
     dataset for running examples in the vulcan package
 License: LGPL-3
-LazyData: TRUE
-biocViews: ExperimentData, Genome, Homo_sapiens_Data, CancerData
 NeedsCompilation: no
 Depends: vulcan
 Encoding: UTF-8

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "exportPattern(\"^[[:alpha:]]+\")\n",
+    "created" : 1495807979932.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4116331488",
+    "id" : "F21C775C",
+    "lastKnownWriteTime" : 1495807601,
+    "last_content_update" : 1495807601,
+    "path" : "~/Dropbox/rstudio/vulcanpackage/vulcandata/NAMESPACE",
+    "project_path" : "NAMESPACE",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_namespace"
+}
