@@ -8,7 +8,7 @@ Description: This package provides a dummy regulatory network and ChIP-Seq
     dataset for running examples in the vulcan package
 License: LGPL-3
 LazyData: TRUE
-biocViews: ExperimentData, Genome, Homo_sapiens_Data, CancerData
+biocViews: ExperimentData, Homo_sapiens_Data, CancerData, ChIPSeqData
 NeedsCompilation: no
 Depends: vulcan
 Encoding: UTF-8
