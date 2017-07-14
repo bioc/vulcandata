@@ -1,0 +1,75 @@
+%\VignetteIndexEntry{Vulcan: VirtUaL ChIP-Seq Analysis through Networks, dummy datasets}
+%\VignettePackage{vulcandata}
+%\VignetteEngine{utils::Sweave}
+
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage{hyperref}
+\usepackage{authblk}
+\usepackage[utf8]{inputenc}
+
+\title{Using vulcan, a package that combines regulatory networks and ChIP-Seq data to identify chromatin-binding cofactors}
+\author[1]{Federico M. Giorgi}
+\author[1]{Andrew N. Holding}
+\author[1]{Florian Markowetz}
+\affil[1]{Cancer Research UK, Cambridge Institute, Robinson Way, Cambridge United Kingdom}
+\date{\today}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\maketitle
+
+%-----------
+\section{Overview of VULCAN}\label{sec:overview}
+Vulcan (VirtUaL ChIP-Seq Analysis through Networks) is a pipeline that combines ChIP-Seq data and regulatory networks to obtain transcription factors that are likely affected by a specific stimulus. In order to do so, our package combines strategies from different BioConductor packages: \emph{DESeq} for data normalization, \emph{ChIPpeakAnno} and \emph{DiffBind} for annotation and definition of ChIP-Seq genomic peaks, \emph{csaw} to define optimal peak width and \emph{viper} for applying a regulatory network over a differential binding signature.
+This data package contains a subset of a ChIP-Seq experiment where MCF7 cell lines were treated with estradiol and left incubating for 45 and 90 minutes. The data is avaialable as BAM/BED/BAI files (one per sample) to illustrate how a \emph{vulcan} pipeline could be executed on raw ChIP-Seq data. The dataset caontains four replicates per time point (0, 45 and 90 minutes), including only chromosome 22 peaks for the sake of example feasibility. The vulcandata package contains also a dummy network of the \emph{regulon} class as specified by the \emph{viper} package. The package comes with a function, \emph{vulcansheet}, which promptly generates a system-specific sample sheet for the dataset contained here, following the style of a \emph{DiffBind} sample sheet.
+
+%--------
+\section{Citation}
+Giorgi FM, Holding AN \& Markowetz F. Network Dynamics of early ER-alpha promoter binding in response to estradiol. Genome Biology (Submitted).
+%--------
+\section{Installation of \emph{vulcandata} package}
+\emph{vulcandata} requires the R-system (\url{http://www.r-project.org})
+After installing R, all required components can be obtained with:
+
+<<echo=FALSE, results=hide>>=
+set.seed(1)
+@
+
+<<echo=TRUE, results=hide, eval=FALSE>>=
+source("http://bioconductor.org/biocLite.R")
+biocLite("vulcandata")
+@
+
+%----
+\section{Getting started}
+As first step, we have to load the vulcandata package with:
+<<echo=TRUE, results=hide>>=
+library(vulcandata)
+@
+
+
+%-------
+\section{Generate a example annotation file}
+<<echo=TRUE, results=hide>>=
+# Generate an annotation file from the dummy ChIP-Seq dataset
+vfile<-"deleteme.csv"
+lcansheet(vfile)
+@
+
+%-----------
+\section{Access example objects}
+<<echo=TRUE, results=hide>>=
+# Example regulon object
+library(viper)
+load(system.file('extdata','network.rda',package='vulcandata',mustWork=TRUE))
+network
+@
+
+
+%-----------
+\begin{thebibliography}{99}
+\bibitem{Alvarez2013} Alvarez, M.J., Shen, Y., Giorgi, F.M., Lachmann, A., Ding, B.B., Ye, B.H., \& Califano, A. (2016). Functional characterization of somatic mutations in cancer using network-based inference of protein activity. Nature Genetics.
+\end{thebibliography}
+%----------
+\end{document}
