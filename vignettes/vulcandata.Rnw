@@ -54,7 +54,9 @@ library(vulcandata)
 <<echo=TRUE, results=hide>>=
 # Generate an annotation file from the dummy ChIP-Seq dataset
 vfile<-"deleteme.csv"
-lcansheet(vfile)
+vulcansheet(vfile)
+read.csv(vfile)
+unlink(vfile)
 @
 
 %-----------
@@ -64,6 +66,12 @@ lcansheet(vfile)
 library(viper)
 load(system.file('extdata','network.rda',package='vulcandata',mustWork=TRUE))
 network
+
+# Example regulon object
+library(viper)
+load(system.file('extdata','network.rda',package='vulcandata',mustWork=TRUE))
+network
+
 @
 
 
