@@ -6,6 +6,10 @@ git remote add origin https://github.com/federicogiorgi/vulcandata.git
 git push -u origin master
 
 cd /Users/giorgi01/Dropbox/rstudio/vulcanpackage/vulcandata
+
+cd /c/Users/fmg2117/Dropbox/rstudio/vulcanpackage/vulcandata
+
+
 git add --all
 git commit -m "Update"
 git push -u origin master

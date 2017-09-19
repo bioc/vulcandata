@@ -30,11 +30,11 @@ vulcansheet<-function(outfile="sheetfile.csv"){
             system.file("extdata","C90_peaks.bed.gz",package="vulcandata",
                         mustWork=TRUE),"bed"
     )
-    row4<-c("T90_4","MCF7","ER","t90","4",
-            system.file("extdata","D90_I.bam",package="vulcandata",mustWork=TRUE),
-            system.file("extdata","D90_peaks.bed.gz",package="vulcandata",
-                        mustWork=TRUE),"bed"
-    )
+    # row4<-c("T90_4","MCF7","ER","t90","4",
+    #         system.file("extdata","D90_I.bam",package="vulcandata",mustWork=TRUE),
+    #         system.file("extdata","D90_peaks.bed.gz",package="vulcandata",
+    #                     mustWork=TRUE),"bed"
+    # )
     row5<-c("T45_1","MCF7","ER","t45","1",
             system.file("extdata","A45_I.bam",package="vulcandata",mustWork=TRUE),
             system.file("extdata","A45_peaks.bed.gz",package="vulcandata",
@@ -50,11 +50,11 @@ vulcansheet<-function(outfile="sheetfile.csv"){
             system.file("extdata","C45_peaks.bed.gz",package="vulcandata",
                         mustWork=TRUE),"bed"
     )
-    row8<-c("T45_4","MCF7","ER","t45","4",
-            system.file("extdata","D45_I.bam",package="vulcandata",mustWork=TRUE),
-            system.file("extdata","D45_peaks.bed.gz",package="vulcandata",
-                        mustWork=TRUE),"bed"
-    )
+    # row8<-c("T45_4","MCF7","ER","t45","4",
+    #         system.file("extdata","D45_I.bam",package="vulcandata",mustWork=TRUE),
+    #         system.file("extdata","D45_peaks.bed.gz",package="vulcandata",
+    #                     mustWork=TRUE),"bed"
+    # )
     row9<-c("T0_1","MCF7","ER","t0","1",
             system.file("extdata","A0_I.bam",package="vulcandata",mustWork=TRUE),
             system.file("extdata","A0_peaks.bed.gz",package="vulcandata",
@@ -70,13 +70,13 @@ vulcansheet<-function(outfile="sheetfile.csv"){
              system.file("extdata","C0_peaks.bed.gz",package="vulcandata",
                          mustWork=TRUE),"bed"
     )
-    row12<-c("T0_4","MCF7","ER","t0","4",
-             system.file("extdata","D0_I.bam",package="vulcandata",mustWork=TRUE),
-             system.file("extdata","D0_peaks.bed.gz",package="vulcandata",
-                         mustWork=TRUE),"bed"
-    )
-    sheetmat<-rbind(row1,row2,row3,row4,row5,row6,row7,row8,row9,
-                    row10,row11,row12)
+    # row12<-c("T0_4","MCF7","ER","t0","4",
+    #          system.file("extdata","D0_I.bam",package="vulcandata",mustWork=TRUE),
+    #          system.file("extdata","D0_peaks.bed.gz",package="vulcandata",
+    #                      mustWork=TRUE),"bed"
+    # )
+    sheetmat<-rbind(row1,row2,row3,row5,row6,row7,row9,
+                    row10,row11)
     colnames(sheetmat)<-header
     write.csv(sheetmat,file=outfile,row.names=FALSE)
 }
