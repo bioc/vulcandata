@@ -8,6 +8,7 @@ git push -u origin master
 cd /Users/giorgi01/Dropbox/rstudio/vulcanpackage/vulcandata
 
 cd /c/Users/fmg2117/Dropbox/rstudio/vulcanpackage/vulcandata
+cd /c/Users/giorgi01/Dropbox/rstudio/vulcanpackage/vulcandata
 
 
 git add --all

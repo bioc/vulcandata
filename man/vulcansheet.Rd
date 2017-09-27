@@ -17,7 +17,7 @@ This function generates a user-specific example sheet with appropriate paths
 on a dummy ChIP-Seq dataset
 }
 \examples{
-vfile<-"deleteme.csv"
+vfile<-tempfile()
 vulcansheet(vfile)
 tmp<-read.csv(vfile)
 head(tmp)

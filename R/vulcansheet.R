@@ -6,7 +6,7 @@
 #' @param outfile Path and file name for the CSV sheet file
 #' @return nothing
 #' @examples
-#' vfile<-"deleteme.csv"
+#' vfile<-tempfile()
 #' vulcansheet(vfile)
 #' tmp<-read.csv(vfile)
 #' head(tmp)
