@@ -2,3 +2,4 @@
 
 export(vulcanexample)
 export(vulcansheet)
+importFrom('utils','write.csv')
