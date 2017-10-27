@@ -1,7 +1,7 @@
 Package: vulcandata
 Type: Package
 Title: VirtUaL ChIP-Seq data Analysis using Networks, dummy dataset
-Version: 0.99.10
+Version: 0.99.11
 Author: Federico M. Giorgi, Andrew N. Holding, Florian Markowetz
 Maintainer: Federico M. Giorgi <federico.giorgi@gmail.com>
 Description: This package provides a dummy regulatory network and ChIP-Seq
