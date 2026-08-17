@@ -1,0 +1,11 @@
+new for version 1.35.1
+======================
+* vulcanexample() loads the dataset into an environment of its own instead
+  of into the function frame, which is what "no visible binding for global
+  variable 'vobj'" was reporting. The value returned is unchanged
+* DESCRIPTION uses Authors@R, and its Description field ends as a sentence
+* The RStudio session directory and the R command history are no longer
+  tracked by git, and .Rhistory is no longer shipped inside the package
+  tarball. Both were already named in .gitignore, which does not apply to
+  files that are already tracked
+* Corrected the title of the vulcansheet() man page

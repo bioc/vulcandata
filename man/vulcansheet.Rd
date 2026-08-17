@@ -2,7 +2,7 @@
 % Please edit documentation in R/vulcansheet.R
 \name{vulcansheet}
 \alias{vulcansheet}
-\title{FUnction to generate an import sheet CSV file for the vulcan test set}
+\title{Function to generate an import sheet CSV file for the vulcan test set}
 \usage{
 vulcansheet(outfile = "sheetfile.csv")
 }

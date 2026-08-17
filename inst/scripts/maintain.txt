@@ -6,16 +6,16 @@ C:\Users\feder\.ssh\config
 Host bioconductor.org
 Hostname bioconductor.org
 User git
-IdentityFile /d/Dropbox/rstudio/github/id_rsa
+IdentityFile /d/Drive/projects/github/id_rsa
 PreferredAuthentications publickey
 # I also copied my id_rsa and id_rsa public in C:\Users\feder\.ssh
 
 
-cd /d/Dropbox/rstudio/github/bioconductor
+cd /d/Drive/projects/github
 git clone git@git.bioconductor.org:packages/vulcan
 git clone git@git.bioconductor.org:packages/vulcandata
 
 # edit file, e.g., `vi DESCRIPTION`
-cd /d/Dropbox/rstudio/github/bioconductor/vulcandata
+cd /d/Drive/projects/github/vulcandata
 git commit DESCRIPTION -m "Fixed Suggests"
 git push

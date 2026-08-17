@@ -1,4 +1,4 @@
-#' FUnction to generate an import sheet CSV file for the vulcan test set
+#' Function to generate an import sheet CSV file for the vulcan test set
 #'
 #' This function generates a user-specific example sheet with appropriate paths
 #' on a dummy ChIP-Seq dataset

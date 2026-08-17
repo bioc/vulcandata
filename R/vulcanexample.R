@@ -16,6 +16,12 @@
 #' vobj$peakcounts[1:5,]
 #' @export
 vulcanexample<-function(){
-    load(system.file("extdata","vobj.rda",package="vulcandata",mustWork=TRUE))
-    return(vobj)
+    # The object is loaded into an environment of its own rather than into
+    # the function frame. Naming vobj after a bare load() leaves it with no
+    # visible binding as far as R's code analysis can tell, which is what
+    # "no visible binding for global variable 'vobj'" was reporting
+    e<-new.env()
+    load(system.file("extdata","vobj.rda",package="vulcandata",
+                    mustWork=TRUE),envir=e)
+    return(e$vobj)
 }
