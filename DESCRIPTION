@@ -1,7 +1,7 @@
 Package: vulcandata
 Type: Package
 Title: VirtUaL ChIP-Seq data Analysis using Networks, dummy dataset
-Version: 1.35.1
+Version: 1.36.0
 Authors@R: c(
     person("Federico M.", "Giorgi", role = c("aut", "cre"),
            email = "federico.giorgi@gmail.com"),
